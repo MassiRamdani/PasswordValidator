@@ -66,7 +66,7 @@ public class PasswordValidator {
                 estUnCarSpecial = true;
             }
             //verifier si les deux variable sont a true
-            if (estUneLettre && estUnChiffire & estUnCarSpecial) {
+            if (estUneLettre && estUnChiffire && estUnCarSpecial) {
                 return true;
             }
         }

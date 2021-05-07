@@ -43,8 +43,12 @@ class PasswordValidatorTest {
         assertFalse(PasswordValidator.isValidPasswordAdmin("ramdaniM066"));
     }
     @Test
+    public void testInvalideSpecialCharInPasswordAdmin() {
+        assertFalse(PasswordValidator.isValidPasswordAdmin("massi)5263123"));
+    }
+    @Test
     public void testValidPasswordAdmin() {
-        assertTrue(PasswordValidator.isValidPassword("massinissa6@"));
+        assertTrue(PasswordValidator.isValidPasswordAdmin("massinissa6@"));
     }
 
 }
